@@ -1,0 +1,166 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hola
+    - buenos días
+    - buenas
+    - vamos
+    - que pasa
+    - hello hello
+    - que pasa tio
+    - buenas tardes
+
+- intent: goodbye
+  examples: |
+    - adios
+    - bye
+    - ciao
+    - chao
+    - nos vemos
+    - hasta luego
+    - hasta la vista
+    - bueno adios
+    - nos vemos
+    - bye bye
+    - hasta pronto
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - si
+    - claro
+    - por supuesto
+    - afirmativo
+    - correcto
+    - estas en lo cierto
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - nunca
+    - no creo
+    - no exactamente
+    - de ninguna manera
+    - no realmente
+    - no es así
+
+- intent: mood_great
+  examples: |
+    - perfecto
+    - bien
+    - increíble
+    - fantastico
+    - nunca he estado mejor
+    - estoy muy bien
+    - estoy bien
+    - me encuentro perfectamente
+    - muy bien
+
+- intent: mood_unhappy
+  examples: |
+    - estoy triste
+    - triste
+    - estoy mal
+    - me encuentro triste hoy
+    - muy muy triste
+    - supermal
+    - más o menos
+    - no muy bien
+    - no muy allá
+    - regular
+    - maaal
+    - mal
+
+
+- intent: bot_challenge
+  examples: |
+    - eres un robot?
+    - eres un bot?
+    - eres un humano?
+    - estoy hablando con una persona?
+    - estoy hablando con un bot?
+    - con quien estoy hablando?
+
+- intent: help
+  examples: |
+    - necesito ayuda
+    - me puedes ayudar?
+    - me podrías ayudar?
+    - me echas una mano?
+    - ayudame con algo
+    - necesitaría tu ayuda la verdad
+    - me gustaría que me ayudaras
+
+- intent: faq/ask_ela
+  examples: |
+    - que es el ela?
+    - de que va el ela?
+    - que hace el ela?
+    - que efectos tiene el ela ?
+
+- intent: faq/ask_adela
+  examples: |
+    - que es adela?
+    - que es esta asociación?
+    - de que va adela?
+    - que hace adela?
+
+- intent: give_time
+  examples: |
+    - que hora es?
+    - dame la hora
+    - puedes decirme la hora?
+    - me das la hora?
+    - me dices la hora?
+    - sabes que hora es?
+
+- intent: subscripcion_chat_ela
+  examples: |
+    - quiero suscribirme al chat ela
+    - querría subscribirme a las charlas semanales
+    - me gustaria subscribirme al chatela
+    - quiero que me suscribas al chat de ela
+    - crear subscripción para el chatela
+    - darse de alta en el chat que se hace de ela
+    - dar alta para chat de adela
+
+- intent: give_email
+  examples: |
+    - usuario@gmail.com
+    - test@hotmail.com
+    - jose.390@gmail.com
+    - maria@outlook.es
+    - fernando19.10@outlook.com
+    - carlos_daniel.123@gmail.com
+
+- intent: say_my_email
+  examples: |
+    - cual es mi correo ?
+    - di mi correo
+    - recuerdas mi email ?
+    - cuentame mi email?
+    - di mi email
+
+- intent: tell_name
+  examples: |
+    - te quiero decir mi nombre
+    - dar nombre
+    - te doy mi nombre
+
+- intent: repeat_name
+  examples: |
+    - cual es mi nombre?
+    - como me llamo?
+
+- intent: give_name
+  examples: |
+    - vicent
+    - rachael
+    - emma

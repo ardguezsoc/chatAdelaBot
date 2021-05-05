@@ -1,0 +1,83 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- help:
+    use_entities: true
+- faq:
+    use_entities: true
+- give_time:
+    use_entities: true
+- subscripcion_chat_ela:
+    use_entities: true
+- give_email:
+    use_entities: true
+- say_my_email:
+    use_entities: true
+- repeat_name:
+    use_entities: true
+- give_name:
+    use_entities: true
+- tell_name:
+    use_entities: true
+entities: []
+slots:
+  email:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hola, en que te puedo ayudar?
+  utter_cheer_up:
+  - image: https://i.pinimg.com/originals/dc/1b/11/dc1b11b3938c8b589cd9f8e11dd8c9ff.jpg
+    text: siento oír eso aquí tienes algo que quizás te anime
+  utter_did_that_help:
+  - text: te he sido de ayuda?
+  utter_happy:
+  - text: Me alegro :D
+  utter_goodbye:
+  - text: Adios, nos vemos :D
+  utter_iamabot:
+  - text: Soy un bot de adela y estoy aquí para ayudarte.
+  utter_help:
+  - text: ¿En qué te puedo ayudar?
+  utter_faq/ask_ela:
+  - text: La esclerosis lateral amiotrófica, o ELA, es una enfermedad progresiva del sistema nervioso que afecta las células nerviosas en el cerebro y la médula espinal, y causa pérdida del control muscular
+  utter_faq/ask_adela:
+  - text: La Asociación Española de Esclerosis Lateral Amiotrófica (adELA) es una organización sin ánimo de lucro, de ámbito estatal, dedicada a ayudar a las personas con ELA (Esclerosis Lateral Amiotrófica) y otras enfermedades de la motoneurona, para mejorar su calidad de vida.
+  utter_subscripcion_chat_ela:
+  - text: Comencemos con la subscripción a chatela, ¿Cuál es tu correo?
+  utter_ask_name:
+  - text: Como te llamas?
+actions:
+- action_show_time
+- action_subscription
+- action_give_email
+- action_receive_name
+- action_say_name
+forms: {}
+e2e_actions: []
